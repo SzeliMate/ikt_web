@@ -4,14 +4,40 @@
 <head><!--A bönésznőnek ad utasításokat-->
     <meta charset="UTF-8"><!--karakterkódolás beállítása-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"><!--(Külső external stílusbeállítás catolása html-hez)-->
+    <link rel="stylesheet" href="css/style.css"><!--(Külső external stílusbeállítás csatolása html-hez)-->
+    <style>
+        h1{
+            color: blue;
+        }
+    </style><!--belső zárójelben (internal) stílusbeállítás-->
     <title>Document</title><!--a böngésző címsorában megjelenítő neév-->
 </head>
 <body><!--A felhasználónak ad információkat-->
     <h1></h1><!--1-es színtű címsor főcím-->
     <h2></h2>-<h6></h6>
+    <h1 style="color: pink;"></h1><!--inline stílusbeállítás-->
     <p></p><!--bekezdések létrehozása-->
-    <img src="" alt="" title="">
-    
+    <img src="" alt="" title=""><!--képbeillesztése; src: forrásválasztó források helye: 1. Mappa (img/kep.jpg) 2.link alt: ha nem jeleníthető meg a kép tilte: ha a kép fölé visszük az egeret-->
+    <a href="https:/...." target="_blank">LINK</a><!---->
+    <a href="cica.html">NAVIGÁCIÓ saját oldalon</a>
+    <a href="#leiras">UGRÓPONT</a>
+    <br><!--sortörés-->
+    <hr><!--vízszintes vonal-->
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul><!--számozatlan felsorlás> emmet (gyorskód):il>li*5 (5 elemből álló lista)-->
+    <ol>
+        <li></li>
+        <li></li>
+    </ol><!--számozott felsorolás-->
+    <ul class="cica" id="kutya">
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul><!--emmet(gyoskódolás: ul.cica#kutya>li*3)-->
 </body>
 </html>
