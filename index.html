@@ -1,64 +1,75 @@
-<!---->
-<!DOCTYPE html> <!--HTML 5 nyelv meghatározás-->
-<html lang="hu"><!--az egész HTML dokumentum ebben íródik és itt állítom be a nyelvet magyarra-->
-<head><!--A bönésznőnek ad utasításokat-->
-    <meta charset="UTF-8"><!--karakterkódolás beállítása-->
+<!--komment-->
+<!DOCTYPE html> <!--HTML5 nyelv meghatározása-->
+<html lang="hu"> <!--az egész html dokumentum ebben íródik és itt állítom be a nyelvet magyarra--> 
+<head> <!--a böngészőnek ad utasításokat-->
+    <meta charset="UTF-8"> <!--karakterkódolás beállítása-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css"><!--(Külső external stílusbeállítás csatolása html-hez)-->
+    <link rel="stylesheet" href="css/style.css"> <!--külső (external stílusbeállítás csatolása a html-hez)-->
     <style>
-        h1{
+        h1 {
             color: blue;
         }
-    </style><!--belső zárójelben (internal) stílusbeállítás-->
-    <title>Document</title><!--a böngésző címsorában megjelenítő neév-->
+    </style> <!--belső (internal) stílusbeállítás-->
+    <title>Document</title> <!--a böngésző címsorában megjelenő név-->
 </head>
-<body><!--A felhasználónak ad információkat-->
-    <h1></h1><!--1-es színtű címsor főcím-->
-    <h2></h2>-<h6></h6>
-    <h1 style="color: pink;"></h1><!--inline stílusbeállítás-->
-    <p></p><!--bekezdések létrehozása-->
-    <img src="" alt="" title=""><!--képbeillesztése; src: forrásválasztó források helye: 1. Mappa (img/kep.jpg) 2.link alt: ha nem jeleníthető meg a kép tilte: ha a kép fölé visszük az egeret-->
-    <a href="https:/...." target="_blank">LINK</a><!---->
+<body> <!--a felhasználónak ad információkat-->
+    <h1></h1> <!--1-es szintű címsor, főcím-->
+    <h2></h2> - <h6></h6>
+    <h1 style="color: pink;"></h1> <!--inline stílusbeállítás-->
+    <p></p> <!--bekezdések létrehozására-->
+    <img src="" alt="" title=""> <!--kép beillesztése; src: forrásválasztó források helye: 1. mappa (img/kep.jpg) 2. link; alt: ha nem jeleníthető meg a kép; title: ha a kép fölé visszük az egeret-->
+    <a href="https://...." target="_blank">LINK</a>
     <a href="cica.html">NAVIGÁCIÓ saját oldalon</a>
     <a href="#leiras">UGRÓPONT</a>
-    <br><!--sortörés-->
-    <hr><!--vízszintes vonal-->
+    <br> <!--sortörés-->
+    <hr> <!--vízszintes vonal-->
     <ul>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
         <li></li>
-    </ul><!--számozatlan felsorlás> emmet (gyorskód):il>li*5 (5 elemből álló lista)-->
+    </ul> <!--számozatlan felsorolás; emmet (gyorskód): ul>li*5 (5 elemből álló lista)-->
     <ol>
         <li></li>
         <li></li>
-    </ol><!--számozott felsorolás-->
+    </ol> <!--számozott felsorolás-->
     <ul class="cica" id="kutya">
         <li></li>
         <li></li>
         <li></li>
-    </ul><!--emmet(gyoskódolás: ul.cica#kutya>li*3)-->
+    </ul> <!--emmet (gyors kód: ul.cica#kutya>li*3)-->
     <table>
         <caption>TÁBLÁZAT CÍME</caption>
         <thead>
             <tr>
-                <th colspan="2"></th><!--Fejléc cella oszlopok kialakítása sorok összevonása-->
+                <th rowspan="2"></th> <!--fejléc cella, oszlopok kialakítása, sorok összevonása-->
                 <th></th>
                 <th></th>
-            </tr><!--Táblázat sora-->
-            <tbody>
-                <tr>
-                    <td></td><!--Táblacella / Table data-->
-                    <td></td>
-                </tr>
-                <tfoot>
+            </tr> <!--a táblázat sora-->
+        </thead> <!--a táblázat fejrésze / fejléc-->
+        <tbody>
+            <tr>
+                <td></td> <!--adatcella-->
+                <td></td>
+                <td colspan="2"></td> <!--oszlopok összevonása-->
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody> <!--a táblázat törzse-->
+        <tfoot>
 
-                </tfoot><!--Táblázat lábléce / lábrésze-->
-            </tbody><!--Táblázat törzse-->
-        </thead><!--A táblázat fejrésze / fejléc-->
-    </table><!--táblázat létrehozása-->
-    <table> <!--table>tr*3>td*2-->
+        </tfoot> <!--a táblázat lábrésze / lábléc-->
+    </table> <!--táblázat létrehozása-->
+    <table>
         <tr>
             <td></td>
             <td></td>
@@ -71,21 +82,54 @@
             <td></td>
             <td></td>
         </tr>
-    </table>
+    </table> <!--emmet (gyorskód) 3 sorból álló 2 oszlopos táblázat: table>tr*3>td*2-->
     <div></div> <!--keret, részekre osztja a weboldalt-->
     <b></b> vagy <strong></strong> <!--félkövérré teszi a szöveget-->
     <i></i> vagy <em></em> <!--dőlt betűssé teszi a szöveget-->
     <u></u> <!--aláhúzottá teszi a szöveget-->
     <span></span> <!--egyedileg szerkeszthetőek a szövegrészek, szavak-->
     <form action="">
-        <label for="vezeteknev">Vezeték név:</label> <!--Nevet , címet lehet beállítani-->
-        <input id="vezeteknev" type="text" placeholder="Kiss"> <!--beviteli mező, típusa szöveg; egyedi azonosító azért kell hogy a laber for részébe be tudjuk írni és ezzel összekapcsolhatjuk őket; a placeholder segítséget nyújt a felhasználónak, hogy mit és hogyan kell beírnia az adott mezőbe-->
-
+        <fieldset> <!--részekre bontható általa az űrlap, pl.: személyes adatok rész, szegélyt rak az adott rész köré-->
+            <legend>Személyes adatok</legend> <!--az adott rész címének beállítása-->
+            <label for="vezeteknev">Vezeték név:</label> <!--Nevet , címet lehet beállítani, elnevezés-->
+            <input id="vezeteknev" type="text" placeholder="Vezetéknév"> <!--beviteli mező, sokféle típus van, egyedi azonosítóval a label-lel összekapcsolható, a placeholderben beírt szöveg segítséget ad a felhasználónak az űrlap kitöltésében-->
+            <!--input type lehet:
+            - szöveg (text)
+            - jelölő négyzet (checkbox) - több választás lehetséges
+            - rádió gomb (radio) - egy választás lehetséges
+            - email cím (email)
+            - szám (number)
+            - dátum (date)
+            - jelszó (password)
+            - idő (time)
+            stb., DE én csak a fent leírtakat fogom kérdezni!!!-->
+        </fieldset>
+        <button type="button">GOMB</button> <!--gomb-->
+            <!--gombot kétféleképpen lehet hozzáadni a weboldalhoz:
+            1. input "tag" type=submit (Küldés), type=reset(Visszaállítás), type=button (sima gomb esemény nélkül)
+            Ha beállítunk value-t (értéket), akkor csak azt fogja kiírni a gombra, amennyiben ezt kihagyjuk a böngésző a saját erre alkalmazott beállítását fogja használni az általad használt operációs rendszer nyelvén.
+            2. button "tag" type=submit (Küldés), type=reset(Visszaállítás), type=button (sima gomb esemény nélkül)-->
+            <label for="auto">AUTÓK:</label>
+            <select name="auto" id="auto"> <!--lenyíló menüs választási lehetőség-->
+                <option value=""></option> <!--lenyíló menü eleme-->
+                <option value="">Audi</option>
+                <option value="">BMW</option>
+                <option value="">Ford</option>
+                <option value="">Fiat</option>
+            </select>
+            <label for="uzenet">Üzenet a szakácsnak:</label>
+            <textarea name="message" id="uzenet" cols="30" rows="10"></textarea> <!--szövegmező nagyobb terjedelmű szövegek írása esetén pl.: Üzenet a szakácsnak: Nem kérek rukkolát a pizzára!-->
         <!--W3Schools-ban szerkesztett verzió:-->
         <label for="vezeteknev">Vezeték név:</label>
         <input type="text" id="vezeteknev"><br>
         <label for="keresztnev">Kereszt név:</label>
         <input type="text" id="keresztnev"><br><br>
     </form> <!--űrlap készítéséhez használjuk-->
+    <nav></nav> <!--navigációs menü kialakítására való-->
+    <header></header> <!--fejléc a body-ban-->
+    <footer></footer> <!--lábléc a body-ban-->
+    <p>P<sub>2</sub></p> <!--alsó index-->
+    <p>m<sup>2</sup></p> <!--felső index-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TmosmihCQe8?si=Lxro6X_xFgmbWjs9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> <!--videókat lehet beilleszteni weboldalra-->
 </body>
 </html>
